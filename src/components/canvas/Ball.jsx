@@ -1,9 +1,17 @@
 
-import React, {Suspense} from 'react'
-import { Canvas } from '@react-three/fiber'
+import React, {Suspense, useEffect, useState} from 'react'
+import { Canvas,useThree } from '@react-three/fiber'
 import { Decal, Float ,OrbitControls,Preload, useTexture } from '@react-three/drei'
 import CanvasLoader from "../Loader";
 
+
+const AutoInvalidate = () => {
+  const { invalidate } = useThree();
+  useEffect(() => {
+    invalidate();
+  }, []);
+  return null;
+};
 
 const Ball = (props) => {
   const [decal] =useTexture([props.imgUrl]);
@@ -26,16 +34,33 @@ const Ball = (props) => {
 
 const BallCanvas=({icon})=>{
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Canvas
     frameloop="demand"
+    dpr={isMobile ? [1, 1.2] : [1, 2]}
     gl={{ preserveDrawingBuffer: true }}
+    camera={{
+      position: [0, 0, isMobile ? 6 : 5],
+      fov: isMobile ? 80 : 75,
+    }}
   >
     <Suspense Feedbacks={<CanvasLoader />}>
       <OrbitControls
         enableZoom={false}
       />
      <Ball imgUrl={icon}/>
+     <AutoInvalidate />
     </Suspense>
 
     <Preload all />

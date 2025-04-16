@@ -29,6 +29,16 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import dreamzsop from "./company/dreamzsop.png";
+import arcane from "./company/arcane.png";
+import java from "./tech/java.png";
+import expressjs from "./tech/expressjs.png";
+import render from "./tech/render.jpg";
+import s3 from "./tech/s3.jpg";
+import amplify from "./tech/amplify.jpg";
+import nextjs from "./tech/nextjs.png"
+
+
 
 export {
   logo,
@@ -59,4 +69,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  dreamzsop,
+  arcane,
+  java,
+  expressjs,
+  amplify,
+  render,
+  s3,
+  nextjs,
 };

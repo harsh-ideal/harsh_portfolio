@@ -34,7 +34,8 @@ const Ball = (props) => {
 
 const BallCanvas=({icon})=>{
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null);
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -44,6 +45,8 @@ const BallCanvas=({icon})=>{
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  if (isMobile === null) return null;
 
   return (
     <Canvas
@@ -55,7 +58,7 @@ const BallCanvas=({icon})=>{
       fov: isMobile ? 80 : 75,
     }}
   >
-    <Suspense Feedbacks={<CanvasLoader />}>
+    <Suspense fallback={<CanvasLoader />}>
       <OrbitControls
         enableZoom={false}
       />
@@ -68,4 +71,6 @@ const BallCanvas=({icon})=>{
   )
 
 }
+
+
 export default BallCanvas;

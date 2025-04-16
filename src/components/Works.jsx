@@ -10,10 +10,10 @@ import { fadeIn, textVariant } from "../utils/motion";
 const Works = () => {
   return (
     <>
-      <motion.dev variants={textVariant()}>
+      <motion.div variants={textVariant(0.2)}>
         <p className={`${styles.sectionSubText}`}>My Work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.dev>
+      </motion.div>
 
       <div className="w-full flex">
         <motion.p
@@ -42,7 +42,7 @@ const ProjectCard=({index, name, description,tags, image, source_code_link})=>{
 
 
   return(
-    <motion.dev variants={fadeIn("up","spring", index*0.5, 0.75)}>
+    <motion.div variants={fadeIn("up","spring", index*0.5, 0.75)}>
       <Tilt
   tiltMaxAngleX={45}
   tiltMaxAngleY={45}
@@ -74,7 +74,7 @@ const ProjectCard=({index, name, description,tags, image, source_code_link})=>{
         </div>
 
       </Tilt>
-    </motion.dev>
+    </motion.div>
   )
 }
 

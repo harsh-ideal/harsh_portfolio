@@ -6,6 +6,8 @@ import { EarthCanvas } from "./canvas";
 
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import useIsMobile from "../hooks/useIsMobile";
+import earthImg from "../assets/earth_transparent.png";
 
 //template Id  template_rm6jdzg
 
@@ -21,6 +23,7 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const isMobile = useIsMobile();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,34 +36,38 @@ const Contact = () => {
 
     setLoading(true);
 
-    emailjs.send("service_7u7izzf", 
-      "template_rm6jdzg", 
-      {
-      from_name: form.name,
-      to_name: "Harsh Srivastava",
-      from_email: form.email,
-      to_email: "harshideal2002@gmail.com",
-      message: form.message,
-    },
-    "Bc9zEfB1jLMAMpl1cX6Ia"
-  ).then(()=>{
-    setLoading(false);
-    alert("Thank You, I will get back tou as soon as possible.");
+    emailjs
+      .send(
+        "service_7u7izzf",
+        "template_rm6jdzg",
+        {
+          from_name: form.name,
+          to_name: "Harsh Srivastava",
+          from_email: form.email,
+          to_email: "harshideal2002@gmail.com",
+          message: form.message,
+        },
+        "Bc9zEfB1jLMAMpl1cX6Ia"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank You, I will get back tou as soon as possible.");
 
-    setForm({
-      name:"",
-      email:"",
-      message:"",
-    })
-  }, (error)=>{
-    setLoading(false);
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
 
-    console.log(error);
+          console.log(error);
 
-
-    alert("something went wrong, Please try again")
-    
-  })
+          alert("something went wrong, Please try again");
+        }
+      );
   };
 
   return (
@@ -124,7 +131,15 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        {isMobile ? (
+          <img
+            src={earthImg}
+            alt="3D model placeholder"
+            className="w-[75%] mx-auto h-full object-contain"
+          />
+        ) : (
+          <EarthCanvas />
+        )}
       </motion.div>
     </div>
   );

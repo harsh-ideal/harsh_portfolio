@@ -2,10 +2,11 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-import Feedbacks from "./../Feedbacks";
+
 
 const Computers = ({isMobile}) => {
   const Computer = useGLTF("./desktop_pc/scene.gltf");
+  
   return (
     <mesh>
       <hemisphereLight intensity={5} groundColor="black" />
@@ -29,7 +30,7 @@ const Computers = ({isMobile}) => {
 };
 
 const ComputersCanvas = () => {
-const [isMobile,setIsMobile]=useState(false);
+const [isMobile,setIsMobile]=useState(null);
 
 useEffect(()=>{
   const MediaQuery=window.matchMedia('(max-width:600px)');
@@ -46,6 +47,7 @@ setIsMobile(event.matches);
   }
 },[])
 
+if (isMobile === null) return null;
   return (
     <Canvas
       frameloop="demand"
@@ -53,7 +55,7 @@ setIsMobile(event.matches);
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense Feedbacks={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}

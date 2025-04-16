@@ -23,6 +23,14 @@ import {
     jobit,
     tripguide,
     threejs,
+    arcane,
+    dreamzsop,
+    amplify,
+    s3,
+    render,
+    java,
+    expressjs,
+    nextjs
   } from "../assets";
   
   export const navLinks = [
@@ -40,25 +48,51 @@ import {
     },
   ];
   
+  // const services = [
+  //   {
+  //     title: "Web Developer",
+  //     icon: web,
+  //   },
+  //   {
+  //     title: "React Native Developer",
+  //     icon: mobile,
+  //   },
+  //   {
+  //     title: "Backend Developer",
+  //     icon: backend,
+  //   },
+  //   {
+  //     title: "Content Creator",
+  //     icon: creator,
+  //   },
+  // ];
+  
+
+
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
+      title: "Backend Specialist (Node & Express)",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "React & Next.js Developer",
+      icon: mobile,
+    },
+    {
+      title: "API Integration & Development",
+      icon: backend,
+    },
+    {
+      title: "Freelance Project Consultant",
       icon: creator,
     },
   ];
-  
+
+
   const technologies = [
     {
       name: "HTML 5",
@@ -72,13 +106,17 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
+    },
+    {
+      name: "Next JS",
+      icon: nextjs,
     },
     {
       name: "Redux Toolkit",
@@ -93,6 +131,10 @@ import {
       icon: nodejs,
     },
     {
+      name: "Express JS",
+      icon: expressjs,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
     },
@@ -101,74 +143,122 @@ import {
       icon: threejs,
     },
     {
+      name: "Java",
+      icon: java,
+    },
+    {
       name: "git",
       icon: git,
     },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
     {
-      name: "figma",
-      icon: figma,
+      name: "AWS Amplify",
+      icon: amplify,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "AWS S3",
+      icon: s3,
+    },
+    {
+      name: "Render",
+      icon: render,
     },
   ];
   
+  // const experiences = [
+  //   {
+  //     title: "React.js Developer",
+  //     company_name: "Starbucks",
+  //     icon: starbucks,
+  //     iconBg: "#383E56",
+  //     date: "March 2020 - April 2021",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  //   {
+  //     title: "React Native Developer",
+  //     company_name: "Tesla",
+  //     icon: tesla,
+  //     iconBg: "#E6DEDD",
+  //     date: "Jan 2021 - Feb 2022",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  //   {
+  //     title: "Web Developer",
+  //     company_name: "Shopify",
+  //     icon: shopify,
+  //     iconBg: "#383E56",
+  //     date: "Jan 2022 - Jan 2023",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  //   {
+  //     title: "Full stack Developer",
+  //     company_name: "Meta",
+  //     icon: meta,
+  //     iconBg: "#E6DEDD",
+  //     date: "Jan 2023 - Present",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  // ];
+  
+
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Software Developer (Full Stack)",
+      company_name: "DreamzSop Advertising Pvt. Ltd.",
+      icon: dreamzsop, 
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Sept 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Collaborated in a small team to develop two large-scale full-stack web applications.",
+        "Utilized React, Node.js, Express, and MongoDB for building a seamless and interactive web application.",
+        "Implemented backend APIs and integrated MongoDB for efficient data storage and retrieval.",
+        "Used Next.js for server-side rendering and improved SEO performance on the second project.",
+        "Managed end-to-end project lifecycle, from development to deployment and ongoing maintenance.",
+        "Ensured code quality through reviews, collaborated with teammates to meet deadlines, and optimized the performance of both projects.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Java Intern",
+      company_name: "Arcane Programming Infotech",
+      icon: arcane, 
+      iconBg: "#999",
+      date: "May 2023 - June 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Completed a 45-day hands-on internship focused on Java fundamentals, OOPs, and basic JDBC.",
+        "Worked on small-scale backend logic and gained exposure to real-world software workflows.",
+        "Collaborated with mentors to understand how Java is used in enterprise-level applications.",
       ],
     },
   ];
-  
+
+
   const testimonials = [
     {
       testimonial:

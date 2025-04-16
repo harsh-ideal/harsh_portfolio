@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../constants";
@@ -9,20 +9,20 @@ import { SectionWrapper } from "../hoc";
 const ServicesCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
-      <motion.dev
-        variants={fadeIn("right", "spring", 1 * index, 0.75)}
+      <motion.div
+        variants={fadeIn("", "", 0.6 * index, 0.75)}
         className="w-full green-pink-gradient  rounded-[20px] shadow-card"
       >
         <div
           option={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-3 px-6 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt="tittle" className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <h3 className="text-white text-[16px] font-bold text-center">
             {title}
           </h3>
         </div>
-      </motion.dev>
+      </motion.div>
     </Tilt>
   );
 };
@@ -30,22 +30,25 @@ const ServicesCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.dev variants={textVariant()}>
+      <motion.div variants={textVariant(0.1)}>
         <p className={`${styles.sectionSubText}`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("left", "spring", 0.1, 0.5)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I am skilled Developer with experienced in Javascript, Java, Node with
-          framework like ReactJs, Expressjs,Three.js. I'm a quick learner and
-          collaborate closely with client to create efficient , scalable and
-          user-friendly solution that solve real world problem. Let's work
-          together to breing your idea to life!
+          I’m a passionate and results-driven developer with practical
+          experience in JavaScript, and Node.js — building robust
+          solutions using frameworks like React.js, Next.js, Express.js, and much more.
+          I’m quick to adapt, love solving complex problems, and collaborate
+          closely with clients to create scalable, user-focused applications. My
+          approach blends clean code with creative thinking, aiming to deliver
+          not just products, but meaningful digital experiences. Let’s bring
+          your ideas to life — with precision, performance, and purpose.
         </motion.p>
-      </motion.dev>
+      </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap justify-between gap-12">
         {services.map((service, index) => (
           <ServicesCard key={index} index={index} {...service} />
         ))}

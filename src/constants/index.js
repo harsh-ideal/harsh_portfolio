@@ -30,7 +30,8 @@ import {
     render,
     java,
     expressjs,
-    nextjs
+    nextjs,
+    bootstrap
   } from "../assets";
   
   export const navLinks = [
@@ -106,10 +107,10 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    // {
-    //   name: "TypeScript",
-    //   icon: typescript,
-    // },
+    {
+      name: "BootStrap",
+      icon: bootstrap,
+    },
     {
       name: "React JS",
       icon: reactjs,
@@ -138,10 +139,10 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "Java",
       icon: java,

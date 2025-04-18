@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../style.js";
 import { navLinks } from "./../constants/index";
 import { logo, menu, close } from "../assets/index.js";
+import linkedinIcon from "../assets/LinkedIn_icon.svg.png"
+import githubIcon from "../assets/github.png"
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -12,6 +14,7 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between item-center man-w-7xl mx-auto">
+        <div className="flex gap-5">
         <Link
           to="/"
           className="flex item-center gap-2"
@@ -26,6 +29,9 @@ const Navbar = () => {
             <span className="sm:block hidden">| Software Developer</span>
           </p>
         </Link>
+        <a href={"https://www.linkedin.com/in/harsh-srivastava21/"} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={25} alt="Linked"/></a>
+        <a href={"https://github.com/harsh-ideal"} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" width={28}/></a>
+        </div>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li

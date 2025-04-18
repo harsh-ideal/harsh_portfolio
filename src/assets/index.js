@@ -36,7 +36,8 @@ import expressjs from "./tech/expressjs.png";
 import render from "./tech/render.jpg";
 import s3 from "./tech/s3.jpg";
 import amplify from "./tech/amplify.jpg";
-import nextjs from "./tech/nextjs.png"
+import nextjs from "./tech/nextjs.png";
+import bootstrap from "./tech/bootstrap.svg.png";
 
 
 
@@ -77,4 +78,5 @@ export {
   render,
   s3,
   nextjs,
+  bootstrap
 };

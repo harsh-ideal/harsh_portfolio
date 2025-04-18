@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -18,6 +19,10 @@ const Earth = ({isMobile}) => {
 
 
 const EarthCanvas = () => {
+   const { ref, inView } = useInView({
+      triggerOnce: false,  // Load only once
+      threshold: 0.1,      // Load when 20% visible
+    });
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -38,6 +43,9 @@ const EarthCanvas = () => {
 
 
   return (
+    <span ref={ref} >
+    {inView && (
+
     <Canvas
       shadows
       frameloop="demand"
@@ -54,6 +62,8 @@ const EarthCanvas = () => {
         <Earth isMobile={isMobile} />
       </Suspense>
     </Canvas>
+    )}
+    </span>
   );
 };
 

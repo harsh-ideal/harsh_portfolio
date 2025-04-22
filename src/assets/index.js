@@ -38,6 +38,13 @@ import s3 from "./tech/s3.jpg";
 import amplify from "./tech/amplify.jpg";
 import nextjs from "./tech/nextjs.png";
 import bootstrap from "./tech/bootstrap.svg.png";
+import indexbyte from "./indexbyte.png";
+import pressrelease from "./pressrelease.png";
+import ecommerce from "./ecommerce.png";
+import tifin from "./tifin.png";
+import pph from "./pph.png";
+import simon from "./simon.png";
+import myntraClone from "./myntraClone.png"
 
 
 
@@ -78,5 +85,12 @@ export {
   render,
   s3,
   nextjs,
-  bootstrap
+  bootstrap,
+  indexbyte,
+  pressrelease,
+  simon,
+  pph,
+  ecommerce,
+  tifin,
+  myntraClone
 };

@@ -8,6 +8,8 @@ import Feedbacks from './components/Feedbacks';
 import Contact from './components/Contact';
 import StarsCanvas from './components/canvas/Stars';
 import Works from './components/Works';
+import linkedinIcon from "./assets/LinkedIn_icon.svg.png"
+import githubIcon from "./assets/github.png"
 
 
 function App() {
@@ -18,13 +20,14 @@ function App() {
     <div className='relative z-0 bg-primary'>
 <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
   <Navbar/>
+ 
   <Hero/>
 </div>
 <About/>
 <Experience/>
 <Tech/>
 <Works/>
-<Feedbacks/>
+{/* <Feedbacks/> */}
 <div className='relative z-0'>
 <Contact/>
 {/* <StarsCanvas/> */}

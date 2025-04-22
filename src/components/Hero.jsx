@@ -3,6 +3,8 @@ import { styles } from '../style';
 import ComputersCanvas from './canvas/Computers';
 import useIsMobile from '../hooks/useIsMobile';
 import computerImg from '../assets/computer_placeholder.png';
+import linkedinIcon from "../assets/LinkedIn_icon.svg.png"
+import githubIcon from "../assets/github.png"
 
 const Hero = () => {
 
@@ -11,13 +13,19 @@ const Hero = () => {
   
 
   return (
-    <section className='relative w-full h-[90vh] lg:h-screen mx-auto'>
+    <section className='relative w-full h-[90vh] lg:h-[90vh] mx-auto'>
+      {isMobile && <div className="flex gap-5 mt-[5rem] mx-10">
+        <a href={"https://www.linkedin.com/in/harsh-srivastava21/"} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={30} alt="Linked"/></a>
+              <a href={"https://github.com/harsh-ideal"} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" width={32}/></a>
+         </div>}
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row item-start gap-5`}>
-<div className='flex flex-col justify-center items-center mt-5'>
+      
+<div className='flex flex-col justify-center items-center mt-[-5rem] lg:mt-5'>
   <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
   <div className='w-1 sm:h-80 h-40 violet-gradient'/>
 </div>
-<div>
+
+<div className='mt-[-5rem] lg:m-0'>
   <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm  <span className='text-[#915eff]'>Harsh Srivastava</span></h1>
   <p className={`${styles.heroSubText} mt-2 text-white-100`}>
   Built an interactive space <br className="sm:block hidden"/>where my work speaks for itself.
@@ -26,7 +34,7 @@ const Hero = () => {
 </div>
 
 {isMobile ? (
-        <img src={computerImg} alt="3D model placeholder" className='w-[75%] mx-auto h-full object-contain' />
+        <img src={computerImg} alt="3D model placeholder" className='w-[75%] mx-auto h-full object-contain mt-[-5rem]' />
       ) : (
         <ComputersCanvas />
       )}

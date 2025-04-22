@@ -45,6 +45,7 @@ import tifin from "./tifin.png";
 import pph from "./pph.png";
 import simon from "./simon.png";
 import myntraClone from "./myntraClone.png"
+import profile from "./profile.jpg"
 
 
 
@@ -92,5 +93,6 @@ export {
   pph,
   ecommerce,
   tifin,
-  myntraClone
+  myntraClone,
+  profile
 };

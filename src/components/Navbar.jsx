@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../style.js";
 import { navLinks } from "./../constants/index";
-import { logo, menu, close } from "../assets/index.js";
+import { logo, menu, close, profile } from "../assets/index.js";
 import linkedinIcon from "../assets/LinkedIn_icon.svg.png"
 import githubIcon from "../assets/github.png"
 import useIsMobile from './../hooks/useIsMobile';
@@ -25,7 +25,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={profile} alt="logo" className="w-9 h-9 rounded-full object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Harsh Srivastva &nbsp;
             <span className="sm:block hidden">| Software Developer</span>

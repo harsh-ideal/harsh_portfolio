@@ -38,7 +38,8 @@ import {
   ecommerce,
   pph,
   simon,
-  myntraClone
+  myntraClone,
+  creativeStock
 } from "../assets";
 
 export const navLinks = [
@@ -290,6 +291,40 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Creative Stocks",
+    WithCompany: true,
+    companyname: "Freelancing",
+    summary:
+      "A microservices-based eCommerce platform where users can purchase stock images with licensing rights. Built with a strong focus on scalability, secure transactions, and user-friendly experience.",
+    description:
+      "Worked as a Full Stack Developer in a 3-member freelance team. The platform allows users to browse and purchase licensed images through a smooth product checkout flow integrated with an online payment gateway. Implemented user authentication, product listing, and order tracking using RESTful APIs. The architecture follows a microservices approach — separating image uploads, user interaction, and admin services. Built a dedicated admin panel for managing products and monitoring orders. Tech stack includes React (Frontend), MongoDB (Database), and Node.js/Express (Backend).",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500", 
+      },
+      {
+        name: "microservices",
+        color: "text-red-500", 
+      },
+      {
+        name: "express",
+        color: "text-yellow-500", 
+      },
+      {
+        name: "mongodb",
+        color: "text-green-600", 
+      },
+      {
+        name: "tailwind",
+        color: "text-pink-500", 
+      },
+    ],    
+    image:creativeStock,
+    source_code_link: null,
+    link: "https://www.creativestock.in",
+  },
   {
     name: "PressRelease",
     WithCompany: true,

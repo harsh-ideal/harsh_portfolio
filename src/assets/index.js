@@ -44,8 +44,10 @@ import ecommerce from "./ecommerce.png";
 import tifin from "./tifin.png";
 import pph from "./pph.png";
 import simon from "./simon.png";
-import myntraClone from "./myntraClone.png"
-import profile from "./profile.jpg"
+import myntraClone from "./myntraClone.png";
+import profile from "./profile.jpg";
+import creativeStock from "./creativesctock.png";
+import Resume from "./Resume.png"
 
 
 
@@ -94,5 +96,7 @@ export {
   ecommerce,
   tifin,
   myntraClone,
-  profile
+  profile,
+  creativeStock,
+  Resume
 };

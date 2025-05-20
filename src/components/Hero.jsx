@@ -5,6 +5,7 @@ import useIsMobile from '../hooks/useIsMobile';
 import computerImg from '../assets/computer_placeholder.png';
 import linkedinIcon from "../assets/LinkedIn_icon.svg.png"
 import githubIcon from "../assets/github.png"
+import { Resume } from '../assets';
 
 const Hero = () => {
 
@@ -14,9 +15,10 @@ const Hero = () => {
 
   return (
     <section className='relative w-full h-[90vh] lg:h-[90vh] mx-auto'>
-      {isMobile && <div className="flex gap-5 mt-[5rem] mx-10">
-        <a href={"https://www.linkedin.com/in/harsh-srivastava21/"} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={30} alt="Linked"/></a>
-              <a href={"https://github.com/harsh-ideal"} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" width={32}/></a>
+      {isMobile && <div className="flex gap-5 mt-[4.5rem] mx-10">
+        <a href={"https://www.linkedin.com/in/harsh-srivastava21/"} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={30} className='mt-4' alt="Linked"/></a>
+              <a href={"https://github.com/harsh-ideal"} target="_blank" rel="noopener noreferrer"><img src={githubIcon} className='mt-4' alt="Github" width={32}/></a>
+              <a href={"https://drive.google.com/file/d/1csn8vmys1j7vrX-rkfiQGWiU4_mlzWFU/view?usp=sharing"} target="_blank" rel="noopener noreferrer"><img src={Resume} className='mt-5 -mx-1' alt="Resume" width={45}/></a>
          </div>}
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row item-start gap-5`}>
       

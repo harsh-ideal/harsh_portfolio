@@ -1,13 +1,15 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../style";
-import { EarthCanvas } from "./canvas";
 
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import useIsMobile from "../hooks/useIsMobile";
-import earthImg from "../assets/earth_transparent.png";
+import earthImg from "../assets/earth_transparent.webp";
+
+const EarthCanvas = lazy(() => import("./canvas/Earth"));
+
 
 //template Id  template_rm6jdzg
 
@@ -138,7 +140,10 @@ const Contact = () => {
             className="w-[75%] mx-auto h-full object-contain"
           />
         ) : (
-          <EarthCanvas />
+
+          <Suspense fallback={<div></div>}>
+                       <EarthCanvas />
+          </Suspense>
         )}
       </motion.div>
     </div>

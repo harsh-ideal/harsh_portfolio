@@ -66,13 +66,13 @@ const About = () => {
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           I’m a passionate and results-driven developer with practical
-          experience in JavaScript, and Node.js — building robust
-          solutions using frameworks like React.js, Next.js, Express.js, and much more.
-          I’m quick to adapt, love solving complex problems, and collaborate
+          experience in JavaScript and Node.js — building robust
+          solutions using frameworks like React.js, Next.js, Express.js and much more.
+          I’m quick to adapt, love solving complex problems and collaborate
           closely with clients to create scalable, user-focused applications. My
           approach blends clean code with creative thinking, aiming to deliver
           not just products, but meaningful digital experiences. Let’s bring
-          your ideas to life — with precision, performance, and purpose.
+          your ideas to life — with precision, performance and purpose.
         </motion.p>
       </motion.div>}
 
@@ -84,13 +84,13 @@ const About = () => {
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           I’m a passionate and results-driven developer with practical
-          experience in JavaScript, and Node.js — building robust
-          solutions using frameworks like React.js, Next.js, Express.js, and much more.
-          I’m quick to adapt, love solving complex problems, and collaborate
+          experience in JavaScript and Node.js — building robust
+          solutions using frameworks like React.js, Next.js, Express.js and much more.
+          I’m quick to adapt, love solving complex problems and collaborate
           closely with clients to create scalable, user-focused applications. My
           approach blends clean code with creative thinking, aiming to deliver
           not just products, but meaningful digital experiences. Let’s bring
-          your ideas to life — with precision, performance, and purpose.
+          your ideas to life — with precision, performance and purpose.
         </p>
       </div>}
 

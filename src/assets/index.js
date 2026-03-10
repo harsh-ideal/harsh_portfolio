@@ -1,53 +1,52 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import backend from "./backend.webp";
+import creator from "./creator.webp";
+import mobile from "./mobile.webp";
+import web from "./web.webp";
+import github from "./github.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
+import css from "./tech/css.webp";
+import docker from "./tech/docker.webp";
+import figma from "./tech/figma.webp";
+import git from "./tech/git.webp";
+import html from "./tech/html.webp";
+import javascript from "./tech/javascript.webp";
+import mongodb from "./tech/mongodb.webp";
+import nodejs from "./tech/nodejs.webp";
+import reactjs from "./tech/reactjs.webp";
+import redux from "./tech/redux.webp";
+import tailwind from "./tech/tailwind.webp";
+import typescript from "./tech/typescript.webp";
 import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import dreamzsop from "./company/dreamzsop.png";
-import arcane from "./company/arcane.png";
-import java from "./tech/java.png";
-import expressjs from "./tech/expressjs.png";
-import render from "./tech/render.jpg";
-import s3 from "./tech/s3.jpg";
-import amplify from "./tech/amplify.jpg";
-import nextjs from "./tech/nextjs.png";
-import bootstrap from "./tech/bootstrap.svg.png";
-import indexbyte from "./indexbyte.png";
-import pressrelease from "./pressrelease.png";
-import ecommerce from "./ecommerce.png";
-import tifin from "./tifin.png";
-import pph from "./pph.png";
-import simon from "./simon.png";
-import myntraClone from "./myntraClone.png";
-import profile from "./profile.jpg";
-import creativeStock from "./creativesctock.png";
-import Resume from "./Resume.png"
+import meta from "./company/meta.webp";
+import shopify from "./company/shopify.webp";
+import starbucks from "./company/starbucks.webp";
+import tesla from "./company/tesla.webp";
+import carrent from "./carrent.webp";
+import jobit from "./jobit.webp";
+import tripguide from "./tripguide.webp";
+import dreamzsop from "./company/dreamzsop.webp";
+import arcane from "./company/arcane.webp";
+import java from "./tech/java.webp";
+import expressjs from "./tech/expressjs.webp";
+import render from "./tech/render.webp";
+import s3 from "./tech/s3.webp";
+import amplify from "./tech/amplify.webp";
+import nextjs from "./tech/nextjs.webp";
+import bootstrap from "./tech/bootstrap.svg.webp";
+import indexbyte from "./indexbyte.webp";
+import pressrelease from "./pressrelease.webp";
+import ecommerce from "./ecommerce.webp";
+import tifin from "./tifin.webp";
+import pph from "./pph.webp";
+import simon from "./simon.webp";
+import myntraClone from "./myntraClone.webp";
+import profile from "./profile.webp";
+import creativeStock from "./creativesctock.webp";
+import Resume from "./Resume.webp"
+import propertydekho247 from './propertydekho247.webp'
+import coderoom from './coderoom.webp'
 
 
 
@@ -98,5 +97,7 @@ export {
   myntraClone,
   profile,
   creativeStock,
-  Resume
+  Resume,
+  propertydekho247,
+  coderoom
 };

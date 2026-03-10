@@ -1,13 +1,14 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
-import BallCanvasGroup from './canvas/Ball';
 import { technologies } from "../constants";
+
+const BallCanvasGroup = lazy(() => import("./canvas/Ball"));
 
 const Tech = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 -mb-[8rem]">
+    <div className="flex flex-col max justify-center items-center gap-10 -mb-[8rem]">
       <motion.div initial="hidden" animate="show" variants={textVariant(1)}>
         <h2 className="text-4xl font-bold text-gray-300 mb-4 relative inline-block">
           My Code Gear
@@ -20,8 +21,10 @@ const Tech = () => {
       </motion.div>
 
       {/* Single Canvas with all balls */}
-      <div className="w-[90vw] lg:w-[100vw] h-[800px] lg:h-[450px]">
-        <BallCanvasGroup />
+      <div className="w-[90vw] lg:w-[98vw] h-[800px] lg:h-[450px]">
+        <Suspense fallback={<div></div>}>
+          <BallCanvasGroup />
+        </Suspense>
       </div>
     </div>
   );

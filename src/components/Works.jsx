@@ -37,7 +37,7 @@ const Works = () => {
               Following project showcase my skill and experience through real
               world example of my work. Each project is priefly describe with
               link project repositry and live demos in it. It reflect my ability
-              to solve the complex problem , work with different technology, and
+              to solve the complex problem , work with different technology and
               merge project effectively.
             </motion.p>
           </div>
@@ -68,10 +68,10 @@ const Works = () => {
               Each project here reflects real-world challenges turned into
               clean, efficient solutions. From frontend polish to backend
               architecture — the focus has always been on performance,
-              scalability, and user experience. Technologies change, trends
-              evolve — but solid logic, clean code, and problem-solving stay
+              scalability and user experience. Technologies change, trends
+              evolve — but solid logic, clean code and problem-solving stay
               timeless. These aren’t just projects, they’re proof of
-              consistency, curiosity, and the ability to build things that
+              consistency, curiosity and the ability to build things that
               actually work.
             </p>
           </div>

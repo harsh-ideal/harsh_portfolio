@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion';
 import { styles } from '../style';
-import ComputersCanvas from './canvas/Computers';
+import { lazy, Suspense } from 'react';
 import useIsMobile from '../hooks/useIsMobile';
-import computerImg from '../assets/computer_placeholder.png';
-import linkedinIcon from "../assets/LinkedIn_icon.svg.png"
-import githubIcon from "../assets/github.png"
+import computerImg from '../assets/computer_placeholder.webp';
+import linkedinIcon from "../assets/LinkedIn_icon.svg.webp"
+import githubIcon from "../assets/github.webp"
 import { Resume } from '../assets';
+
+
+const ComputersCanvas = lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
 
@@ -38,7 +41,9 @@ const Hero = () => {
 {isMobile ? (
         <img src={computerImg} alt="3D model placeholder" className='w-[75%] mx-auto h-full object-contain mt-[-5rem]' />
       ) : (
-        <ComputersCanvas />
+       <Suspense fallback={<div></div>}>
+   <ComputersCanvas />
+</Suspense>
       )}
       
 

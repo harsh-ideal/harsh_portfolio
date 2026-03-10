@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../style.js";
 import { navLinks } from "./../constants/index";
 import { logo, menu, close, profile, Resume } from "../assets/index.js";
-import linkedinIcon from "../assets/LinkedIn_icon.svg.png"
-import githubIcon from "../assets/github.png"
+import linkedinIcon from "../assets/LinkedIn_icon.svg.webp"
+import githubIcon from "../assets/github.webp"
 import useIsMobile from './../hooks/useIsMobile';
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
       {!isMobile && <> <a href={"https://www.linkedin.com/in/harsh-srivastava21/"} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={25} alt="Linked"/></a>
         <a href={"https://github.com/harsh-ideal"} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" width={28}/></a>
-        <a href={"https://drive.google.com/file/d/1csn8vmys1j7vrX-rkfiQGWiU4_mlzWFU/view?usp=sharing"} target="_blank" rel="noopener noreferrer"><img src={Resume} alt="Resume" width={45}/></a>
+        <a href={"https://drive.google.com/file/d/1HKDMS8CKybUSC0p7wLlbzxSK9iPR3mNo/view?usp=sharing"} target="_blank" rel="noopener noreferrer"><img src={Resume} alt="Resume" width={45}/></a>
 
    </>}
         </div>

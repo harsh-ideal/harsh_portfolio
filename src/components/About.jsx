@@ -7,6 +7,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import useIsMobile from "../hooks/useIsMobile";
 
+const overviewText =
+  "I’m a Full-Stack MERN Developer with 2+ years of experience building scalable web apps, mobile apps and REST APIs using React.js, Next.js, React Native, Node.js, Express.js and MongoDB. I’ve worked with SSR, CI/CD, Agile workflows and cloud deployment (AWS, Render), and improved real production performance, taking a Lighthouse score from 13 to 82. I’ve delivered products for companies and as a freelancer, from property portals and matrimony platforms to a maid service app. Let’s bring your ideas to life with precision, performance and purpose.";
+
 const ServicesCard = ({ index, title, icon }) => {
 const isMobile=useIsMobile();
 
@@ -65,14 +68,7 @@ const About = () => {
           variants={fadeIn("left", "spring", 0.1, 0.5)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I’m a passionate and results-driven developer with practical
-          experience in JavaScript and Node.js — building robust
-          solutions using frameworks like React.js, Next.js, Express.js and much more.
-          I’m quick to adapt, love solving complex problems and collaborate
-          closely with clients to create scalable, user-focused applications. My
-          approach blends clean code with creative thinking, aiming to deliver
-          not just products, but meaningful digital experiences. Let’s bring
-          your ideas to life — with precision, performance and purpose.
+          {overviewText}
         </motion.p>
       </motion.div>}
 
@@ -83,14 +79,7 @@ const About = () => {
           variants={fadeIn("left", "spring", 0.1, 0.5)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I’m a passionate and results-driven developer with practical
-          experience in JavaScript and Node.js — building robust
-          solutions using frameworks like React.js, Next.js, Express.js and much more.
-          I’m quick to adapt, love solving complex problems and collaborate
-          closely with clients to create scalable, user-focused applications. My
-          approach blends clean code with creative thinking, aiming to deliver
-          not just products, but meaningful digital experiences. Let’s bring
-          your ideas to life — with precision, performance and purpose.
+          {overviewText}
         </p>
       </div>}
 

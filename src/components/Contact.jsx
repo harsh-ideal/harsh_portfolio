@@ -11,11 +11,6 @@ import earthImg from "../assets/earth_transparent.webp";
 const EarthCanvas = lazy(() => import("./canvas/Earth"));
 
 
-//template Id  template_rm6jdzg
-
-//service id   service_7u7izzf
-
-//public key   Bc9zEfB1jLMAMpl1cX6Ia
 
 const Contact = () => {
   const formRef = useRef();
@@ -40,8 +35,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_7u7izzf",
-        "template_rm6jdzg",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_7u7izzf",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_rm6jdzg",
         {
           from_name: form.name,
           to_name: "Harsh Srivastava",
@@ -49,12 +44,12 @@ const Contact = () => {
           to_email: "harshideal2002@gmail.com",
           message: form.message,
         },
-        "uDUh5PZOwgZZuZ0L2"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "uDUh5PZOwgZZuZ0L2"
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank You, I will get back tou as soon as possible.");
+          alert("Thank you! I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -67,7 +62,7 @@ const Contact = () => {
 
           console.log(error);
 
-          alert("something went wrong, Please try again");
+          alert("Something went wrong. Please try again.");
         }
       );
   };
@@ -93,8 +88,8 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Whats your Name"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary rexr-white rounded-lg outlined-none border-none font-medium"
+              placeholder="What's your name?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -104,8 +99,8 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="Whats your Email"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary rexr-white rounded-lg outlined-none border-none font-medium"
+              placeholder="What's your email?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -115,14 +110,14 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Whats do you wabt to say ?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary rexr-white rounded-lg outlined-none border-none font-medium"
+              placeholder="What do you want to say?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outine-none w-fit text-white font-bold shadow-md  shadow-primary rounded-xl"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md  shadow-primary rounded-xl"
           >
             {loading ? "Sending..." : "Send"}
           </button>

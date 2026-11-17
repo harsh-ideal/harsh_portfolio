@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../style.js";
-import { navLinks } from "./../constants/index";
+import { navLinks, LINKS } from "./../constants/index";
 import { logo, menu, close, profile, Resume } from "../assets/index.js";
 import linkedinIcon from "../assets/LinkedIn_icon.svg.webp"
 import githubIcon from "../assets/github.webp"
@@ -27,13 +27,13 @@ const Navbar = () => {
         >
           <img src={profile} alt="logo" className="w-9 h-9 rounded-full object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Harsh Srivastva &nbsp;
+            Harsh Srivastava &nbsp;
             <span className="sm:block hidden">| Software Developer</span>
           </p>
         </Link>
-      {!isMobile && <> <a href={"https://www.linkedin.com/in/harsh-srivastava21/"} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={25} alt="Linked"/></a>
-        <a href={"https://github.com/harsh-ideal"} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" width={28}/></a>
-        <a href={"https://drive.google.com/file/d/1HKDMS8CKybUSC0p7wLlbzxSK9iPR3mNo/view?usp=sharing"} target="_blank" rel="noopener noreferrer"><img src={Resume} alt="Resume" width={45}/></a>
+      {!isMobile && <> <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width={25} alt="Linked"/></a>
+        <a href={LINKS.github} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" width={28}/></a>
+        <a href={LINKS.resume} target="_blank" rel="noopener noreferrer"><img src={Resume} alt="Resume" width={45}/></a>
 
    </>}
         </div>

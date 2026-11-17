@@ -47,6 +47,19 @@ import creativeStock from "./creativesctock.webp";
 import Resume from "./Resume.webp"
 import propertydekho247 from './propertydekho247.webp'
 import coderoom from './coderoom.webp'
+import subbito from "./subbito.webp";
+import gulfincart from "./gulfincart.webp";
+import shubhakalyana from "./shubhakalyana.webp";
+import akshara from "./akshara.webp";
+import reactnative from "./tech/reactnative.webp";
+import socketio from "./tech/socketio.webp";
+import postgresql from "./tech/postgresql.webp";
+import supabase from "./tech/supabase.webp";
+import firebase from "./tech/firebase.webp";
+import razorpay from "./tech/razorpay.webp";
+import postman from "./tech/postman.webp";
+import nginx from "./tech/nginx.webp";
+import jwt from "./tech/jwt.webp";
 
 
 
@@ -99,5 +112,18 @@ export {
   creativeStock,
   Resume,
   propertydekho247,
-  coderoom
+  coderoom,
+  subbito,
+  gulfincart,
+  shubhakalyana,
+  akshara,
+  reactnative,
+  socketio,
+  postgresql,
+  supabase,
+  firebase,
+  razorpay,
+  postman,
+  nginx,
+  jwt
 };

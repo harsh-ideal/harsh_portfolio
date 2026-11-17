@@ -42,7 +42,26 @@ import {
   creativeStock,
   coderoom,
   propertydekho247,
+  subbito,
+  gulfincart,
+  shubhakalyana,
+  akshara,
+  reactnative,
+  socketio,
+  postgresql,
+  supabase,
+  firebase,
+  razorpay,
+  postman,
+  nginx,
+  jwt,
 } from "../assets";
+
+export const LINKS = {
+  linkedin: "https://www.linkedin.com/in/harsh-srivastava21/",
+  github: "https://github.com/harsh-ideal", // TODO: confirm username (resume has harsh-ideall)
+  resume: "https://drive.google.com/file/d/1HKDMS8CKybUSC0p7wLlbzxSK9iPR3mNo/view?usp=sharing", // TODO: replace with NEW resume link
+};
 
 export const navLinks = [
   {
@@ -80,16 +99,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer (MERN)",
     icon: web,
+  },
+  {
+    title: "React & Next.js Developer",
+    icon: web,
+  },
+  {
+    title: "React Native Mobile App Developer",
+    icon: mobile,
   },
   {
     title: "Backend Specialist (Node & Express)",
     icon: backend,
-  },
-  {
-    title: "React & Next.js Developer",
-    icon: mobile,
   },
   {
     title: "API Integration & Development",
@@ -131,8 +154,12 @@ const technologies = [
     icon: nextjs,
   },
   {
+    name: "React Native",
+    icon: reactnative,
+  },
+  {
     name: "JWT Authentication",
-    icon: backend,
+    icon: jwt,
   },
   {
     name: "Redux Toolkit",
@@ -155,6 +182,26 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Socket.io",
+    icon: socketio,
+  },
+  {
+    name: "Razorpay",
+    icon: razorpay,
+  },
+  {
     name: "REST API",
     icon: backend,
   },
@@ -168,7 +215,7 @@ const technologies = [
   },
   {
     name: "Nginx",
-    icon: backend,
+    icon: nginx,
   },
   {
     name: "Docker",
@@ -180,14 +227,14 @@ const technologies = [
   },
   {
     name: "Postman",
-    icon: backend,
+    icon: postman,
   },
   {
     name: "Java",
     icon: java,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   // {
@@ -215,35 +262,44 @@ const technologies = [
 
 const experiences = [
   {
-  title: "MERN Developer",
-  company_name: "Prop Future AI Pvt. Ltd.",
-  icon: web,
-  iconBg: "#383E56",
-  date: "Sept 2025 - Present",
-  points: [
-  "Developing scalable property discovery platform for web and mobile applications.",
-  "Built advanced property search system with fuzzy matching and mesh-based database architecture.",
-  "Migrated production frontend from React to Next.js with Server Side Rendering to improve SEO and performance.",
-  "Contributed as a team member to the development of React Native mobile applications for Android and iOS.",
-  "Improved Lighthouse performance score from 13 to 46 through frontend and backend optimization.",
-  "Configured Nginx load balancing and Docker-based deployment to improve system stability.",
-  "Designed scalable REST APIs using Node.js, Express and MongoDB following MVC architecture."
-]
-},
+    title: "Software Developer",
+    company_name: "Seekneo IT Solution",
+    icon: web,
+    iconBg: "#383E56",
+    date: "April 2026 - Present",
+    points: [
+      "Delivered 3 projects from scratch: Akshara School (Fee Management), Shubhakalyana (Web + App) and GulfInCart.",
+      "Developed full-stack solutions using React.js, Next.js, React Native, Node.js and Express.js.",
+      "Handling project maintenance, enhancements and production deployments.",
+    ],
+  },
   {
-    title: "Software Developer (Full Stack)",
+    title: "MERN Developer",
+    company_name: "Prop Future AI Pvt. Ltd.",
+    icon: web,
+    iconBg: "#E6DEDD",
+    date: "Sept 2025 - April 2026",
+    points: [
+      "Improved Lighthouse performance score from 13 to 82 through frontend and backend optimization.",
+      "Built scalable REST APIs, fuzzy property search and a mesh-based DB architecture following MVC.",
+      "Migrated the frontend from React to Next.js with Server Side Rendering for better SEO and performance.",
+      "Developed cross-platform React Native apps for Android and iOS.",
+      "Configured Nginx load balancing and Docker-based deployment to improve scalability and stability.",
+    ],
+  },
+  {
+    title: "Software Developer (MERN Stack)",
     company_name: "DreamzSop Advertising Pvt. Ltd.",
     icon: dreamzsop,
     iconBg: "#E6DEDD",
-    date: "Sept 2024 - Agust 2025",
+    date: "Sept 2024 - August 2025",
     points: [
-  "Delivered two large-scale MERN applications supporting 2,000+ users and 200k+ content records.",
-  "Built scalable REST APIs using Node.js, Express and MongoDB following MVC architecture.",
-  "Migrated a production application from React to Next.js with Server Side Rendering to improve SEO and performance.",
-  "Automated 50+ daily government press releases using Node.js, Cheerio and cron jobs.",
-  "Optimized application performance and database queries to support high traffic and improved system stability.",
-  "Handled full deployment lifecycle using AWS, Render and CI/CD pipelines.",
-]
+      "Delivered 2 MERN applications supporting 2,000+ users, 200K+ posts and 99% uptime.",
+      "Automated 50+ daily government press releases using Cheerio, Node.js and CI/CD.",
+      "Built a crypto tracking platform with 5K+ coins, real-time data and community features.",
+      "Migrated projects from React to Next.js (SSR), improving load speed by 30%.",
+      "Handled full deployment lifecycle using AWS, Render and CI/CD pipelines.",
+    ],
   },
   {
     title: "Java Intern",
@@ -288,6 +344,85 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Subbito",
+    WithCompany: true,
+    companyname: "Freelancing",
+    summary:
+      "Gurgaon-based house help platform to book verified maids for cleaning, dishwashing, laundry and more, with a website, Android app and iOS app.",
+    description:
+      "Subbito is a Gurgaon-based house help platform that I built as a freelance project. It connects families with verified house help professionals for everyday tasks like home cleaning, bathroom cleaning, dishwashing, laundry, dusting and kitchen prep, all bookable in just a few taps.\n\n" +
+      "The product includes a landing website (subbito.com) that explains the services and how booking works, along with Android and iOS apps available on the Google Play Store and Apple App Store.\n\n" +
+      "Subbito has grown quickly in Gurgaon and is serving families in the city, and I continue to build and maintain the platform.",
+    // TODO: add exact tech stack and metrics (users/bookings) once confirmed
+    tags: [
+      { name: "android", color: "text-green-500" },
+      { name: "ios", color: "text-blue-500" },
+      { name: "website", color: "text-pink-500" },
+      { name: "booking", color: "text-yellow-500" },
+    ],
+    image: subbito,
+    source_code_link: null,
+    link: "https://subbito.com",
+  },
+  {
+    name: "GulfInCart",
+    WithCompany: true,
+    companyname: "Seekneo IT Solution",
+    summary:
+      "Multi-country vehicle marketplace for buying, selling and renting, with buyer, dealer and admin platforms.",
+    description:
+      "GulfInCart is a vehicle marketplace built at Seekneo IT Solution with separate buyer, dealer and admin platforms, using Next.js, React.js, Node.js and Express.js.\n\n" +
+      "It supports country-based buying, selling and renting of cars, bikes, heavy equipment, commercial vehicles, buggies, caravans and special number plates.\n\n" +
+      "Key integrations include a payment gateway, wallet, subscriptions, AWS S3, Firebase notifications and multilingual support.",
+    tags: [
+      { name: "nextjs", color: "text-blue-500" },
+      { name: "nodejs", color: "text-green-600" },
+      { name: "express", color: "text-yellow-500" },
+      { name: "aws-s3", color: "text-orange-500" },
+      { name: "firebase", color: "text-red-500" },
+    ],
+    image: gulfincart,
+    source_code_link: null,
+    link: "https://gulfincart.com",
+  },
+  {
+    name: "Shubhakalyana",
+    WithCompany: true,
+    companyname: "Seekneo IT Solution",
+    summary:
+      "Full-stack matrimony platform with User, Admin and Relationship Manager portals.",
+    description:
+      "Shubhakalyana is a full-stack matrimony platform developed at Seekneo IT Solution, with separate User, Admin and Relationship Manager portals.\n\n" +
+      "It includes profile management, partner preferences, KYC authentication, membership plans and Razorpay payment integration.\n\n" +
+      "Real-time features use Socket.IO, with Firebase notifications, AWS S3 storage and Docker-based deployment.",
+    tags: [
+      { name: "react", color: "text-blue-500" },
+      { name: "nodejs", color: "text-green-600" },
+      { name: "socket.io", color: "text-yellow-500" },
+      { name: "razorpay", color: "text-purple-500" },
+      { name: "docker", color: "text-teal-600" },
+    ],
+    image: shubhakalyana,
+    source_code_link: null,
+    link: "https://www.shubhakalyana.com",
+  },
+  {
+    name: "Akshara School",
+    WithCompany: true,
+    companyname: "Seekneo IT Solution",
+    summary: "School fee management system built at Seekneo IT Solution.",
+    description:
+      "Akshara School is a fee management system for schools, built from scratch at Seekneo IT Solution as one of three projects delivered there.",
+    // TODO: add live link, stack and key features (fee collection, receipts, reports etc.) once confirmed
+    tags: [
+      { name: "fee-management", color: "text-green-500" },
+      { name: "full-stack", color: "text-blue-500" },
+    ],
+    image: akshara,
+    source_code_link: null,
+    link: null,
+  },
+  {
   name: "PropertyDekho247",
   WithCompany: true,
   companyname: "Prop Future AI",
@@ -299,9 +434,9 @@ const projects = [
 
     "The web application was initially developed using React and later migrated to Next.js with Server Side Rendering to significantly improve SEO visibility and page performance. Backend services were developed using Node.js, Express and MongoDB following MVC architecture for scalability and maintainability.\n\n" +
 
-    "In addition to the web platform, I contributed as a team member to the development of the PropertyDekho mobile application built with React Native for both Android and iOS platforms. The mobile applications use the same backend APIs and provide a seamless property browsing experience on mobile devices.\n\n" +
+    "In addition to the web platform, I built and deployed the PropertyDekho mobile application with React Native for both Android and iOS platforms. The mobile applications use the same backend APIs and provide a seamless property browsing experience on mobile devices.\n\n" +
 
-    "The infrastructure was optimized using Nginx load balancing and Docker-based deployment to handle high traffic and improve system stability. Through frontend and backend optimizations, Lighthouse performance scores improved significantly.",
+    "The infrastructure was optimized using Nginx load balancing and Docker-based deployment to handle high traffic and improve system stability. Through frontend and backend optimizations, the Next.js SSR pages reached an average Lighthouse performance score of 82+, and the setup helped reduce customer queries by 40%.",
 
   tags: [
     {
@@ -497,7 +632,6 @@ const projects = [
     ],
     image: carrent,
     source_code_links: [
-      "https://github.com/harsh-ideal/Dynamic_E-Commerce",
       "https://github.com/harsh-ideal/car-rental-frontend",
     ],
     link: null,
@@ -611,7 +745,7 @@ const projects = [
 const achievements = [
   {
     title: "Performance Optimization",
-    value: "Improved Lighthouse score from 13 to 46",
+    value: "Improved Lighthouse score from 13 to 82",
   },
   {
     title: "Users Served",

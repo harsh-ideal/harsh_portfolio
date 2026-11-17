@@ -15,13 +15,13 @@ const Tech = () => {
           <span className="block h-1 w-1/2 bg-blue-700 mx-auto mt-2 rounded-full"></span>
         </h2>
         <p className="text-gray-400 text-lg mb-10 text-center max-w-3xl">
-          Technologies I’ve used or learned over time — some in real-world
+          Technologies I’ve used or learned over time - some in real-world
           projects, others as part of my continuous growth as a developer.
         </p>
       </motion.div>
 
       {/* Single Canvas with all balls */}
-      <div className="w-[90vw] lg:w-[98vw] h-[800px] lg:h-[450px]">
+      <div className="w-[90vw] lg:w-[98vw] h-[900px] lg:h-[550px]">
         <Suspense fallback={<div></div>}>
           <BallCanvasGroup />
         </Suspense>
